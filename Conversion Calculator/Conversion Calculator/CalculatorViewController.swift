@@ -33,6 +33,29 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func converstionTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Choose Converter", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "fahrenheit to celcius", style: .default, handler: {
+            (alertAction) -> Void in
+            self.outputDisplay.text = self.converters[0].outputUnit
+            self.inputDisplay.text = self.converters[0].inputUnit
+        }))
+        alert.addAction(UIAlertAction(title: "celcius to fahrenheit", style: .default, handler: {
+            (alertAction) -> Void in
+            self.outputDisplay.text = self.converters[1].outputUnit
+            self.inputDisplay.text = self.converters[1].inputUnit
+        }))
+        alert.addAction(UIAlertAction(title: "miles to kilometers", style: .default, handler: {
+            (alertAction) -> Void in
+            self.outputDisplay.text = self.converters[2].outputUnit
+            self.inputDisplay.text = self.converters[2].inputUnit
+        }))
+        alert.addAction(UIAlertAction(title: "kilometers to miles", style: .default, handler: {
+            (alertAction) -> Void in
+            self.outputDisplay.text = self.converters[3].outputUnit
+            self.inputDisplay.text = self.converters[3].inputUnit
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

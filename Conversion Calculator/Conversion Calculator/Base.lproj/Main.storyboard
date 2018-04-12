@@ -204,7 +204,7 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="NOS-uA-cch" firstAttribute="width" secondItem="Yro-qy-shy" secondAttribute="width" multiplier="2:1" id="9Et-fV-U0k"/>
+                                                    <constraint firstItem="NOS-uA-cch" firstAttribute="width" secondItem="Yro-qy-shy" secondAttribute="width" multiplier="2:1" constant="1" id="9Et-fV-U0k"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
