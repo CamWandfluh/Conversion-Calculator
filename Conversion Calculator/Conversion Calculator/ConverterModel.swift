@@ -70,7 +70,7 @@ class Conversion {
         outputValue = convertUnit(input: inputValue)
         
         inputDisplay = inputString + converter.inputUnit
-        outputDisplay = "\(outputValue)" + converter.outputUnit
+        outputDisplay = String(format: "%.2f", outputValue) + converter.outputUnit
         
     }
     
