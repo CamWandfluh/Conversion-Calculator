@@ -27,6 +27,7 @@ class CalculatorViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Would like these to be cleaner but kinda ran out of time
     @IBAction func converstionTapped(_ sender: Any) {
         let alert = UIAlertController(title: "Choose Converter", message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "fahrenheit to celcius", style: .default, handler: {

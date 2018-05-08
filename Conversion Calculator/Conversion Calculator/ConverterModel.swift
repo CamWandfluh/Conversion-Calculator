@@ -22,6 +22,7 @@ class Conversion {
     var inputValue: Double
     var outputValue: Double
     
+    //add different converters here
     let converters: [Converter] =
     [Converter(label: "fahrenheit to celcius", inputUnit: "°F", outputUnit: "°C"),
     Converter(label: "celcius to fahrenheit", inputUnit: "°C", outputUnit: "°F"),
@@ -39,6 +40,7 @@ class Conversion {
         
     }
     
+    //add conversion formulas here
     func convertUnit(input: Double) -> Double
     {
         switch (converter.label) {
